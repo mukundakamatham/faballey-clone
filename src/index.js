@@ -7,6 +7,8 @@ const {register, login} = require("./controllers/auth.controller")
 const productController = require("./controllers/product.controller")
 const userController=require("./controllers/user.controller")
 
+const paymentController=require("./controllers/payment.controller")
+const adressController=require("./controllers/address.controller")
 
 
 const bagController = require("./controllers/bag.controller.js");
@@ -101,6 +103,8 @@ app.use("/bag", bagController);
 app.use("/productDetail", productDetailsController);
 
 
+app.use('/payment', paymentController)
+app.use('/address', adressController)
 
 app.use('/users', userController);
 
