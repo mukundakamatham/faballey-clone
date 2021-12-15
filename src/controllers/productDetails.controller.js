@@ -3,7 +3,7 @@ const express = require ("express");
 const Product = require("../models/product.model.js");
 
 const router = express.Router();
-console.log("random");
+
 
 router.get("/:id", async (req, res) => {
     try {

@@ -2,7 +2,7 @@ const jwt = require("jsonwebtoken");
 require("dotenv").config();
 const { check, validationResult } = require('express-validator');
 const User = require("../models/user.model")
-console.log("auth");
+
 const newToken = (user) => {
     return jwt.sign({user}, process.env.JWT_SECRET_KEY);
 }
