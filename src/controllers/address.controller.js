@@ -5,7 +5,7 @@ const User = require("../models/user.model")
 const authenticate = require('../middlewares/authenticate')
 
 const router = express.Router();
-console.log("random");
+
 
 router.get("/", authenticate,async (req, res) => {
     try {
