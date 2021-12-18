@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.shipping-section{
+    display: flex;
+    width: 90%
+}
+.shipping-container{
+    float: left;
+    font-size: 20px;
+    color: #555555;
+    width: 50%;
+    height: auto;
+    padding-left: 5%;
+    margin-right: 5%;
+}
+.ship-form{
+    border: 1px solid #efefef;
+    padding: 10px;
+}
+.ship-flex{
+    display:flex;
+}
+.ship-item input[type="text"] {
+    border: 1px solid #efefef;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #8a8a8a;
+}
+.ship-item label{
+   color:black;
+   font-size: 0.7rem;
+   font-weight: 600;
+}
+.ship-item span {
+    width: 80%;
+    vertical-align: top;
+    float: left;
+    box-sizing: border-box;
+    display: table-cell;
+}
+.ship-item textarea {
+    width: 100%;
+    border: 1px solid #efefef;
+    padding: 12px;
+    box-sizing: border-box;
+    color: #8a8a8a;
+    min-height: 100px;
+}
+.ship-item select {
+    border: 1px solid #efefef;
+    padding: 12px;
+    width: 100%;
+    color: #8a8a8a;
+}
+.editAddres {
+    margin-bottom: 10px;
+    display: table;
+    width: 100%;
+}
+.editAddres input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    appearance: checkbox;
+}
+.editAddres p {
+    display: inline-block;
+    color: #606060;
+    margin: 5px;
+    font-size:0.79rem;
+}
+.shipbtn input {
+    border-radius: 3px;
+    border: 1px solid #fc6486;
+    padding: 13px 50px;
+    background: #fc6486;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 15px 0 20px 0;
+}
+.product-details{ 
+width: 35%;
+float: right;
+padding: 15px 0 40px 0;
+}
+.product-title{ 
+    width: 100%;
+    display: inline-block;
+}
+.product-title h3{
+    font-size: 20px;
+    color: #555555;
+    font-weight: 400;
+}
+.product-title a {
+    font-size: 14px;
+    color: #fc6486;
+    font-weight: 400;
+    float: right;
+    text-decoration: underline;
+    line-height: 22px;
+    margin-top: -8%;
+}
+.ship-items{
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0;
+    border-bottom: 1px solid #efefef;
+}
+.ship-items img{
+        float: left;
+        max-width: 40px;
+        border: none;
+}
+ .prize{
+     padding-top:0%;
+ }
+.ship-items p{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 11px;
+    color: #4a4a4a;
+    line-height: 15px;
+    width: 80%;
+}
+.optionBox{
+    width:100%;
+    box-sizing:border-box;
+    display: inline-block;
+    background: #f4f4f4;
+    padding: 20px;
+    margin-top: 5px;
+}
+.prizemain{
+    width:100%;
+    display: inline-block;
+}
+.prizeDetailbox{
+    display: inline-block;
+    width: 100%;
+}
+.prizeDetail{
+   /* display:none; */
+   width: 100%;
+   float: left;
+   padding: 4px 0;
+}
+.prizeDetail p {
+    float: left;
+    font-size: 14px;
+    color: #6e6e6e;
+}
+.prizeDetail span {
+    float: right;
+    font-size: 14px;
+    color: #6e6e6e;
+}
+.prizeDetail i {
+    margin: 2px 2px 0 0;
+    float: left;
+}
+.orderTotal {
+    width: 100%;
+    float: left;
+    padding: 10px 0;
+    margin-top: 8px;
+    border-top: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+}
+.orderTotal p {
+    float: left;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fc6486;
+}
+.orderTotal span {
+    float: right;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fc6486;
+}
+.orderTotal i {
+    margin: 2px 2px 0 0;
+    float: left;
+}
+
+/* ----------------------last-section-------------------------- */
+.shipdetails {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #4a4a4a;
+    border: 1px solid #efefef;
+    padding: 10px;
+}
+.delivery-details{
+    margin-top: 0px;
+    font-size: 13px;
+    color: #4a4a4a;
+    border: 1px solid #efefef;
+    padding: 10px;
+}
+
+
+
+
+
+/* -----------------------footer syles below------------------------------------------------ */
+.shipfootmain {
+    border-top: 1px solid #dcdcdc;
+    width: 100%;
+    padding: 25px 0px;
+    margin-top: 30px;
+    display: inline-block;   
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+.shipFooteritem {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.shipFooterbox ul {
+    display: inline-block;
+}
+ul, ol {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+.shipFooterbox li {
+    display: inline-block;
+    border-right: 2px solid #a2a2a2;
+    padding: 0 10px;
+}
+.shipFooterbox  p {
+    float: right;
+    color: #4a4a4a;
+    font-size: 15px;
+}
+.shipFooterbox li a {
+    color: #4a4a4a;
+    font-size: 14px;
+    text-decoration: none;
+}
+@media only screen and (min-width: 768px) and (max-width: 1220px){
+    .shipFooteritem {
+        width: 90%;
+    }
+}
