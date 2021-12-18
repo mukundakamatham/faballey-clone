@@ -2,9 +2,12 @@ import { combineReducers, createStore, applyMiddleware, compose } from "redux";
 import { authReducer } from "./auth/reducer";
 import thunk from "redux-thunk";
 
+import { bagReducer } from "./bag/reducer";
+import { cartReducer } from "./cart/reducer";
 const rootReducer = combineReducers({
   auth: authReducer,
-  
+  cart: cartReducer,
+  bag: bagReducer,
 });
 
 /**

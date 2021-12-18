@@ -11,9 +11,7 @@ function LoginPage() {
     (state) => state.auth,
     shallowEqual
   );
-  const handleSignin = ({ email, password }) => {
-    dispatch(loginUser({ email, password }));
-  };
+ 
   const handleLogin = ({ email, password }) => {
     dispatch(loginUser({ email, password }));
   };
