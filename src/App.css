@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+  
+}
+#a{
+  display: grid;
+  grid-template-columns: 30% 65%;
+  grid-gap: 3%;
+  width:60%;
+  margin-left: 20%;
+  color: #282c34;
+  background-color: aqua;
+  height: 200px;
+  margin-bottom: 10px;
+}
+#a img{
+ 
+  height: 190px;
+  padding: 5px;
+}
+#b{
+  color: #282c34;
+  margin-top: 8%;
+}
+#input{
+  height: 150px;
+  padding-top: 50px;
+  background-color: antiquewhite;
+  width: 60%;
+  margin-left: 20%;
+}
+#input input{
+  width:50%;
+  height: 50px;
+  border-radius: 25px;
+  margin-right: 15px;
+  
+}
+#input button{
+  height: 50px;
+  font-weight: bolder;
+  width: 15%;
+  color: white;
+  background-color: rgb(47, 0, 255);
+  border-radius: 25px;
+}
+#meal{
+  height: 240px;
+  width:60%;
+  border-radius: 1px solid grey;
+  padding: 10px;
+}
+#meal img{
+  height: 200px;
+ 
+}
