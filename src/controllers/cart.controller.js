@@ -6,15 +6,17 @@ const User = require("../models/user.model");
 
 const Product = require("../models/product.model");
 
+const authenticate = require('../middlewares/authenticate')
 const router = express.Router();
 
-router.get("/", (req, res) => {
-  return res.send("empty cart");
-});
+// router.get("/",authenticate, (req, res) => {
+//   return res.send("empty cart");
+// });
 
-router.get("/:userId", async (req, res) => {
+router.get("/",authenticate, async (req, res) => {
   try {
-    let user = await User.findById(req.params.userId);
+    let userId=req.user._id
+    let user = await User.findById(userId);
 
     let cart = user.cartItems;
 
@@ -36,8 +38,9 @@ router.get("/:userId", async (req, res) => {
   }
 });
 
-router.post("/add", async (req, res) => {
-  let { userId, prodId } = req.body;
+router.post("/add", authenticate,async (req, res) => {
+  let {  prodId } = req.body;
+  let userId=req.user._id
   let user = await User.findById(userId).lean().exec();
 
   let cart = user.cartItems;
@@ -58,8 +61,9 @@ router.post("/add", async (req, res) => {
   return res.json(user);
 });
 
-router.post("/deleteItem/", async (req, res) => {
-  let { userId, prodId } = req.body;
+router.post("/deleteItem/",authenticate, async (req, res) => {
+  let { prodId } = req.body;
+ let userId=req.user._id
   let user = await User.findById(userId).lean().exec();
 
   let cart = user.cartItems;
