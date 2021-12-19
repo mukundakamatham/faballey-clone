@@ -20,7 +20,7 @@ padding: 1% 12% 1% 10%;
 }
 #images-plus-details{
     /* border: 1px solid green; */
-    margin-right: 3%;
+    margin-right:2%;
     flex: 2;
     margin-top:1%;
     margin-bottom:1%;
@@ -40,6 +40,8 @@ padding: 1% 12% 1% 10%;
 #My-shopping-bag{
 font-size: 18px;
 text-align: left;
+    color: #6e6e6e;
+   
 }
 
 #for-first-line{
@@ -149,6 +151,7 @@ color: #6e6e6e;;
 }
 
 #whole-price{
+    margin-top: 7% !important;
     padding: 5%;
     /* border: 1px solid black; */
     background-color: #f4f4f4;
@@ -239,6 +242,7 @@ padding-bottom: 2%;
     background-color: #F7396E;
     border: none;
     border-radius: 6px;
+    cursor: pointer;
 }
 #move-to-wishlist{
     text-decoration: underline;
