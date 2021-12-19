@@ -1,0 +1,126 @@
+.box3{
+    border-left: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    border-top: none;
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 500px;
+    height: auto;
+    background: #fff;
+    margin: 31px auto 0;
+    word-break: break-all;
+  }
+  
+  .bloc-tabs {
+    display: flex;
+  }
+
+  .tabs {
+       display: inline-block;
+       padding: 10px 15px;
+       cursor: pointer;
+       font-weight: 500;
+       font-size: 13px;
+       border: 1px solid #dcdcdc;
+       margin-right: 5px;
+  }
+
+  
+  .active-tabs  {
+    background: #fff;
+    border: 1px solid #dcdcdc;
+    border-bottom: none;
+    font-weight: 700;
+    padding: 10px 15px 11px 15px;
+  }
+  
+  .active-tabs::before {
+    /* content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% + 2px);
+    height: 5px;
+    background: rgb(88, 147, 241); */
+  }
+
+  .linerone{
+    margin-top: 35px;
+    width: 195px;
+    height: 0px;
+    border-bottom: 1px solid #dcdcdc;
+  }
+  
+  
+  
+  .Tbutton {
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 13px;
+    border: 1px solid #dcdcdc;
+    margin-right: 5px;
+    color: #555;
+    
+  }
+  .content-tabs {
+    flex-grow : 1;
+  }
+
+  .content {
+    background: white;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    background: #fff;
+    border: 1px solid #dcdcdc;
+    border-top: none;
+    font-weight: 700;
+    padding: 10px 15px 11px 15px;
+    display: none;
+  }
+  .content h2 {
+    padding: 0px 0 5px 0px;
+  }
+
+  .content p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17px;
+    font-family: 'Lato',sans-serif;
+    color: #999;
+  }
+  .active-content {
+    display: block;
+  }
+
+  .cont_table{
+    margin-top: 5px;
+    width:80%; 
+    border:1px solid #dcdcdc;
+    border-collapse:collapse;
+  }
+
+.cont_table td {
+    color: #9c9c9c;
+    font-size: 12px;
+    padding: 5px;
+    font-family: 'Lato',sans-serif;
+    border:1px solid #dcdcdc;
+}
+
+.styles_a{
+ color:#a756fb;
+ font-weight:600;
+ text-decoration:underline;
+}
