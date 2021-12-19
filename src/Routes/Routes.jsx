@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, Route, Switch } from "react-router-dom";
 import { Home } from "./Home";
-
+import Wishlist from "../components/wishlist/Wishlist"
 import Shipping from '../components/payments/ship';
 
  import Payment from '../components/payments/payment'
@@ -16,10 +16,14 @@ function Routes() {
          <Link to="/login">LOGIN</Link>
          <Link to="/Shipping">Shipping</Link>
          <Link to="/Payment">Payment</Link>
+         <Link to="/wishlist">wishlist</Link>
       </div>
       <Switch>
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route path="/wishlist">
+          <Wishlist /> 
         </Route>
         <Route path="/Payment">
           <Payment /> 

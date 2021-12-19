@@ -2,8 +2,8 @@
 import React from "react";
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import { Redirect } from "react-router-dom";
-import { SignIn } from "../components/Signin";
-import { loginUser,signinUser } from "../Redux/auth/action";
+import { SignIn } from "../components/login/Signin";
+import { signinUser } from "../Redux/auth/action";
 
 function SigninPage() {
   const dispatch = useDispatch();

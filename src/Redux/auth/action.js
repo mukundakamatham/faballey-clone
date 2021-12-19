@@ -75,4 +75,9 @@ const signinUser = (payload) => (dispatch) => {
       dispatch(failureAction);
     });
 };
-export { loginRequest, loginSuccess, loginFailure, loginUser,signinUser,signinRequest,signinSuccess,signinFailure };
+
+
+const Logout= () => (dispatch) => {
+  dispatch(loginFailure)
+}
+export { Logout,loginRequest, loginSuccess, loginFailure, loginUser,signinUser,signinRequest,signinSuccess,signinFailure };

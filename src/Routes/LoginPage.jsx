@@ -2,12 +2,12 @@
 import React from "react";
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import { Redirect } from "react-router-dom";
-import { Login1 } from "../components/Loger";
+import { Login1 } from "../components/login/Loger";
 import { loginUser } from "../Redux/auth/action";
 
 function LoginPage() {
   const dispatch = useDispatch();
-  const { isAuth, isLoading, token, isError } = useSelector(
+  const { isAuth, isLoading,  isError } = useSelector(
     (state) => state.auth,
     shallowEqual
   );

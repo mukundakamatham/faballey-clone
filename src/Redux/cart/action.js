@@ -1,4 +1,4 @@
-import { loadData, saveData } from "../../utils/localStorage";
+import { loadData } from "../../utils/localStorage";
 import {
   GET_CART_REQUEST,
   GET_CART_SUCCESS,
@@ -87,9 +87,9 @@ const getCARTFailure = (error) => {
     type: GET_CART_FAILURE,
     payload: error
   };
-};
+};        
 
-const getcart = () => (dispatch) => {
+const getcart = (payload) => (dispatch) => {
   dispatch(getCARTRequest());
   return    app.get("/cart/",{ headers: {
     'Authorization': 'Bearer ' + token
