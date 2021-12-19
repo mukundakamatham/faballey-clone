@@ -1,5 +1,5 @@
 import { loadData, saveData } from "../../utils/localStorage";
-import { LOGIN_FAILURE, LOGIN_REQUEST, LOGIN_SUCCESS ,SIGNIN_FAILURE,SIGNIN_REQUEST,SIGNIN_SUCCESS} from "./actionTypes";
+import { LOGOUT,LOGIN_FAILURE, LOGIN_REQUEST, LOGIN_SUCCESS ,SIGNIN_FAILURE,SIGNIN_REQUEST,SIGNIN_SUCCESS} from "./actionTypes";
 
 const token = loadData("token");
 // verify
@@ -36,6 +36,16 @@ const authReducer = (state = initState, { type, payload }) => {
         isAuth: false,
         token: "",
         isError: true,
+        isLoading: false
+      };
+    }
+    case LOGOUT: {
+      saveData("token", "");
+      return {
+        ...state,
+        isAuth: false,
+        token: "",
+       
         isLoading: false
       };
     }

@@ -9,13 +9,13 @@ import {app }from "../../utils/request";
 
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
 function Payment() {
-    const [address, setAddress] = useState("");
+    const [address, setAddress] = useState([]);
     const [carddetails, setCarddetails] = useState([])
     
     const [formData, setFormData] = useState([])
 
     
-const cart = useSelector((state) => state.cart.cart);
+const cart = useSelector((state) => state.cart.CARTs);
 
 
     const { isAuth, isLoading, token, isError } = useSelector(
@@ -39,22 +39,23 @@ const cart = useSelector((state) => state.cart.cart);
     //        }
     
     // }
-    const card=async()=>{
+    const adress=async()=>{
         try {
-            if(address.length<1){
+            if(address.length===0){
                 return <Redirect to="/Shipping" /> 
             }
             await app.get("/address/",{ headers: {
                'Authorization': 'Bearer ' + token
              }}).then(res =>{
-              
+              console.log("asd")
               setAddress(res.data)
+             
            });
            } catch (error) {
                console.log(error);
            }
     }
-    async function adress(){
+    async function card(){
        
         try {
             await app.patch("/payment/update",{payment:formData},{ headers: {
@@ -62,6 +63,7 @@ const cart = useSelector((state) => state.cart.cart);
              }}).then(res =>{
               
                 setCarddetails(res.data)
+                alert("payment done succesfully")
            });
            } catch (error) {
                console.log(error);
@@ -77,7 +79,21 @@ const cart = useSelector((state) => state.cart.cart);
         ...formData,[name]:type==="checkbox" ? checked:value,
     })
         } 
-
+        let sum=0;
+        function total(){
+         for(var i=0;i<cart.length;i++){
+          
+          sum=sum+cart[i].price
+        
+         }
+        }
+        let count=cart.length;
+        if(count===0){
+          var totalamount=0;
+        }else{
+          totalamount=+sum+50
+        }
+        total()
 if(!isAuth){
     return <Redirect to="/login" />;
 }else{
@@ -148,7 +164,7 @@ if(!isAuth){
               </div>
             </div>
             
-            <button type="submit" class="btn-payment" onclick={card}>
+            <button type="submit" class="btn-payment" onClick={card}>
               Pay Now
             </button>
           </div>
@@ -157,36 +173,36 @@ if(!isAuth){
 {/* ------------------------------right section------------------------------------------- */}
 
 
-<div class="product-details">
+<div className="product-details">
 <span className="product-title prize">
-          <h3>1 product(s) in Bag</h3>
+          <h3>{count} product(s) in Bag</h3>
           </span>
 
 
 
-          <div class="optionBox">
-            <div class="prizemain">
-              <div class="prizeDetailbox">
-                <div class="prizeDetail">
+          <div className="optionBox">
+            <div className="prizemain">
+              <div className="prizeDetailbox">
+                <div className="prizeDetail">
                   <p>Sub Total</p>
                   <span>
-                    <i class="fas fa-rupee-sign"></i> 1050
+                    <i className="fas fa-rupee-sign"></i> {sum}
                   </span>
                 </div>
-                <div class="prizeDetail">
+                <div className="prizeDetail">
                   <p>Shipping</p>
                   <span>
-                    <i class="fas fa-rupee-sign"></i> 50
+                    <i className="fas fa-rupee-sign"></i> 50
                   </span>
                 </div>
-                <div class="orderTotal">
+                <div className="orderTotal">
                   <p>Total</p>
                   <span>
                     {" "}
                     <i
-                      class="fas fa-rupee-sign"
+                      className="fas fa-rupee-sign"
                       style={{"float":"none"}}
-                    ></i> 1050{" "}
+                    ></i> {totalamount}{" "}
                   </span>
                 </div>
               </div>
@@ -201,14 +217,14 @@ if(!isAuth){
           <div className="product-title">
             <a href="#a">Change Address</a>
           </div>
-          <p class="shipdetails pay-address">
+          <p className="shipdetails pay-address">
            shailaja <br/>
            Itarsi,Madhya Pradesh <br/>
            India - 461111 <br/>
            Mobile <b>9340796426</b><br/></p>
 
           {/*------------------------------bottom-section-------------- */}
-          <p class="delivery-details">
+          <p className="delivery-details">
             Estimated Delivery Time<br/><br/>
            India : 4-6 business days.<br/> International: 7-12 business days.
            </p>

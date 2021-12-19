@@ -13,8 +13,9 @@ function Ship() {
     const [formData, setFormData] = useState([])
 
     
-const bag = useSelector((state) => state.bag.bag);
+const bag = useSelector((state) => state.bag.BAGs);
 
+const cart = useSelector((state) => state.cart.CARTs);
 
     const { isAuth, isLoading, token, isError } = useSelector(
         (state) => state.auth,
@@ -37,6 +38,23 @@ const bag = useSelector((state) => state.bag.bag);
     //        }
     
     // }
+
+
+    let sum=0;
+    function total(){
+     for(var i=0;i<cart.length;i++){
+      
+      sum=sum+cart[i].price
+    
+     }
+    }
+    let count=cart.length;
+    if(count===0){
+      var totalamount=0;
+    }else{
+      totalamount=+sum+50
+    }
+    total()
   
     async function adress(){
        
@@ -169,15 +187,15 @@ const bag = useSelector((state) => state.bag.bag);
                   onChange={handleChange}
                 ></textarea>
 
-                <div class="editAddres">
+                <div className="editAddres">
                   <input type="checkbox" />
                   <input name="DefaultAddress" type="hidden" value="false" />
                   <p>Make this my default address</p>
                 </div>
               </div>
-              <div class="shipbtn">
+              <div className="shipbtn">
                 <input
-                  class="dfaddrs"
+                  className="dfaddrs"
                   type="submit"
                   value="Deliver to this address"
                   id="shipAdd"
@@ -188,19 +206,19 @@ const bag = useSelector((state) => state.bag.bag);
           </div>
         </div>
         {/* -------------------------------form ends and product details starts------------------------------------------------- */}
-        <div class="product-details">
+        <div className="product-details">
           <div className="product-title">
             <h3>Product Details</h3>
             <a href="#">Edit Bag</a>
           </div>
 
-          <div class="ship-items">
+          <div className="ship-items">
             <p>
               Dusty Pink Slit Shoulder Side Tie Dress <br />
               Sku : DRS04147A <br />
               Qty : 1 Price :{" "}
               <span>
-                <i class="fas fa-rupee-sign"></i>
+                <i className="fas fa-rupee-sign"></i>
               </span>{" "}
               1050
               <br />
@@ -212,27 +230,27 @@ const bag = useSelector((state) => state.bag.bag);
           <span className="product-title prize">
           <h3>Price Details</h3>
           </span>
-          <div class="optionBox">
-            <div class="prizemain">
-              <div class="prizeDetailbox">
-                <div class="prizeDetail">
+          <div className="optionBox">
+            <div className="prizemain">
+              <div className="prizeDetailbox">
+                <div className="prizeDetail">
                   <p>Sub Total</p>
                   <span>
-                    <i class="fas fa-rupee-sign"></i> 1050
+                    <i className="fas fa-rupee-sign"></i> 1050
                   </span>
                 </div>
-                <div class="prizeDetail">
+                <div className="prizeDetail">
                   <p>Shipping</p>
                   <span>
-                    <i class="fas fa-rupee-sign"></i> 50
+                    <i className="fas fa-rupee-sign"></i> 50
                   </span>
                 </div>
-                <div class="orderTotal">
+                <div className="orderTotal">
                   <p>Total</p>
                   <span>
                     {" "}
                     <i
-                      class="fas fa-rupee-sign"
+                      className="fas fa-rupee-sign"
                       style={{"float":"none"}}
                     ></i> 1050{" "}
                   </span>
@@ -241,7 +259,7 @@ const bag = useSelector((state) => state.bag.bag);
             </div>
           </div>
           {/*------------------------------bottom-section-------------- */}
-          <p class="shipdetails">
+          <p className="shipdetails">
             Estimated Delivery Time<br/><br/>
            India : 4-6 business days.<br/> International: 7-12 business days.
            </p>
