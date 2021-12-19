@@ -49,8 +49,9 @@ function ProductList() {
     }
     
     let { id } = useParams();
-    
+   
     useEffect(() => {
+        console.log("id",id);
         getDetails(id)
     }, [])
     
