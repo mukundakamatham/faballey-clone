@@ -13,7 +13,7 @@ function Test(){
      var anything 
     const fetchdata = async()=>{
         
-        var fetchcall = await axios.get(`http://localhost:2345/productDetail/61bae728f4c625615cb302dd`)
+        var fetchcall = await axios.get(`http://localhost:2345/productDetail/${id}`)
         
         anything=fetchcall.data.image[0]
         console.log("test");
