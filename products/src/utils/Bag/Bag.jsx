@@ -1,5 +1,7 @@
 import {BothNavbar} from "../Navbars/Bothnavbar";
-import "./bag.css"
+import "./bag.css";
+import Dustbin from "../../images/Dustbin.svg";
+import Plus from "../../images/plus.svg"
 
 function Bag(){
     return(
@@ -17,20 +19,20 @@ function Bag(){
           <div id="tough-work">
               <div id="for-first-line">
               <span id="name-for-cart">Blush Pink Pleated Full Sleeve Dress</span>
-              <span id="for-money">1800 900</span>
+              <span id="for-money"><span id="for-price1"> ₹  1800</span> <span id ="for-discount1">  900</span></span>
               </div>
 
               <div id="for-second-line">
-              <span>size : S</span>
+              <span>Size : S</span>
              <span>Qty : 1</span>
              <span>Color : Pink</span>
              </div>
-             
+            
              <div id="for-third-line">
-                 <div id="wishlist-ji"><span>Edit Item</span>
-              <span>Move to WishList</span> </div>
+                 <div id="wishlist-ji"><span id="move-to-wishlist">Edit Item</span>
+              <span id="move-to-wishlist">Move to WishList</span> </div>
               <div id="for-delete">
-                  delete
+                  <img src ={Dustbin} ></img>
               </div>
               
               </div>
@@ -52,13 +54,13 @@ function Bag(){
              <div id="donation-check"> <h3>Donation</h3> <input type="checkbox"></input></div>
              <p>Extra  10 (This donation is towards NGO Ssrishti that is providing food and hygiene essentials to migrant labors during the COVID-19 lockdown)</p>
              <hr></hr>
-             <div id="applyc0upon">Apply Coupon</div>
+             <div id="applyc0upon"> <img src ={Plus}></img>  <span>Apply Coupon</span> </div>
              <hr></hr>
-             <div id="applyc0upon">Reedeem Gift Card</div>
+             <div id="applyc0upon"> <img src ={Plus}></img> <span>Reedeem Gift Card</span></div>
              <hr></hr>
-             <div id="subtotal"><span>Sub Total</span>  <span>970</span> </div>
+             <div id="subtotal"><span>Sub Total</span>  <span> ₹ 970</span> </div>
              <hr></hr>
-             <div id="subtotal"> <span>Total</span> <span>970</span></div>
+             <div id="subtotal1"> <span>Total</span> <span>₹ 970</span></div>
              <hr></hr>
              <div><button id="button-place-order">Place Order</button></div>
          </div>
