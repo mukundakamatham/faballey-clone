@@ -21,63 +21,63 @@ function Wishlist() {
                 <ul>
                   <li>
                     <a href="#">
-                      <i class="fas fa-user-circle"></i>
+                      <i className="fas fa-user-circle"></i>
                       My Profile
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i class="fas fa-shopping-bag"></i>
+                      <i className="fas fa-shopping-bag"></i>
                       My Orders
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="userActive">
-                      <i class="far fa-heart"></i>
+                    <a href="#" className="userActive">
+                      <i className="far fa-heart"></i>
                       My Wishlist
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i class="fas fa-wallet"></i>My Credits
+                      <i className="fas fa-wallet"></i>My Credits
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i class="fas fa-gift"></i>My Vouchers
+                      <i className="fas fa-gift"></i>My Vouchers
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i class="far fa-address-book"></i>My Addresses
+                      <i className="far fa-address-book"></i>My Addresses
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i class="fas fa-headset"></i>Contact Us
+                      <i className="fas fa-headset"></i>Contact Us
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i class="fas fa-sign-out-alt"></i>Logout
+                      <i className="fas fa-sign-out-alt"></i>Logout
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
             {/* -----------------------------right-container---------------------------------- */}
-            <div class="right-container">
-              <div class="right-heading">
+            <div className="right-container">
+              <div className="right-heading">
                 <h3>My Wishlist</h3>
               </div>
-              <div class="wish-mainbox">
+              <div className="wish-mainbox">
                 <span>Products</span>
-                <div class="wish-box">
+                <div className="wish-box">
                   <span>Price</span> <span>Size</span> <span>Bag</span>
                 </div>
               </div>
-              <div class="wish-product-list">
-                <div class="wish-product-name">
+              <div className="wish-product-list">
+                <div className="wish-product-name">
                   <figure>
                     <a href="/dusty-pink-embellished-neck-blouson-dress-83/prdt">
                       {" "}
@@ -89,16 +89,16 @@ function Wishlist() {
                     <p>Dusty Pink Embellished Neck Blouson Dress</p>
                   </figure>
                 </div>
-                <div class="wish-product-right">
+                <div classNameName="wish-product-right">
                   <span>
-                    <div class="wish-price">
-                      <i class="fas fa-rupee-sign"></i> 1100
+                    <div className="wish-price">
+                      <i className="fas fa-rupee-sign"></i> 1100
                     </div>
                   </span>
 
                   <span>
-                    <div class="wish-size">
-                      <select class="size">
+                    <div className="wish-size">
+                      <select className="size">
                         <option>Select Size</option>
                         <option> S </option>
                         <option> M </option>
@@ -106,14 +106,14 @@ function Wishlist() {
                         <option> XS </option>
                         <option> XL </option>
                       </select>
-                      <p class="error">Select Size</p>
+                      <p className="error">Select Size</p>
                     </div>
                   </span>
 
                   <span>
-                    <div class="wish-btn addtobag">
-                      <a class="addToCart">ADD TO BAG</a>
-                      <i class="fas fa-times"></i>
+                    <div className="wish-btn addtobag">
+                      <a className="addToCart">ADD TO BAG</a>
+                      <i className="fas fa-times"></i>
                     </div>
                   </span>
                 </div>
@@ -121,7 +121,7 @@ function Wishlist() {
 
               {/* -------------bottom btn------------------ */}
 
-              <div class="wish-addall">
+              <div className="wish-addall">
                 <a href="#" class="addToAllCart">
                   Add all to Bag
                 </a>
@@ -129,7 +129,7 @@ function Wishlist() {
               {/* ------------------------------------- */}
               {/* ---------------back to home-------------- */}
 
-              <div class="wish-to-home"><a href="#">❮ BACK TO HOME</a></div>
+              <div className="wish-to-home"><a href="#">❮ BACK TO HOME</a></div>
               {/* ------------------------------------------ */}
 
 

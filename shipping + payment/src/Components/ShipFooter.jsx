@@ -4,9 +4,9 @@ function ShipFooter() {
   return (
     <div>
  
-        <div class="shipfootmain">
-          <div class="shipFooteritem">
-            <div class="shipFooterbox">
+        <div className="shipfootmain">
+          <div className="shipFooteritem">
+            <div className="shipFooterbox">
               <ul>
                 <li>
                   <a href="https://www.faballey.com/">Home</a>

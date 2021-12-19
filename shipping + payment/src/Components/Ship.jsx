@@ -3,6 +3,14 @@ import "./ship.css";
 import ShipFooter from "./ShipFooter";
 
 function Ship() {
+// const [name,setName] = React.useState("");
+// const [number,setNumber] = React.useState("");
+// const [country,setCountry] = React.useState("");
+// const [pincode,setPincode] = React.useState("");
+// const [address,setAddress] = React.useState("");
+// onChange={(e)=>setName(e.target.value)}
+// console.log(name,number,country,pincode,address);
+
   return (
     <div>
       <div className="shipping-section">
@@ -18,7 +26,7 @@ function Ship() {
                         Full name*
                         <br />
                       </label>
-                      <input type="text" />
+                      <input type="text"  />
                     </span>
                   </div>
                   <div>
@@ -27,7 +35,7 @@ function Ship() {
                         Mobile number*
                         <br />
                       </label>
-                      <input type="text" maxlength="10" minlength="10" />
+                      <input type="text" maxlength="10" minlength="10"   />
                     </span>
                   </div>
                 </div>
@@ -41,7 +49,7 @@ function Ship() {
                         <br />
                       </label>
 
-                      <select name="Country" required="">
+                      <select name="Country" required=""  >
                         <option value=""> India</option>
                         <option value="">Australia</option>
                         <option value="">Belgium</option>
@@ -91,7 +99,7 @@ function Ship() {
                         Pin Code*
                         <br />
                       </label>
-                      <input type="text" maxlength="6" minlength="6" />
+                      <input type="text" maxlength="6" minlength="6"  />
                     </span>
                   </div>
                 </div>
@@ -105,17 +113,17 @@ function Ship() {
                   name="Address"
                   required=""
                   rows="2"
-                ></textarea>
+               ></textarea>
 
-                <div class="editAddres">
+                <div className="editAddres">
                   <input type="checkbox" />
                   <input name="DefaultAddress" type="hidden" value="false" />
                   <p>Make this my default address</p>
                 </div>
               </div>
-              <div class="shipbtn">
+              <div className="shipbtn">
                 <input
-                  class="dfaddrs"
+                  className="dfaddrs"
                   type="submit"
                   value="Deliver to this address"
                   id="shipAdd"
@@ -125,19 +133,19 @@ function Ship() {
           </div>
         </div>
         {/* -------------------------------form ends and product details starts------------------------------------------------- */}
-        <div class="product-details">
+        <div className="product-details">
           <div className="product-title">
             <h3>Product Details</h3>
             <a href="#">Edit Bag</a>
           </div>
 
-          <div class="ship-items">
+          <div className="ship-items">
             <p>
               Dusty Pink Slit Shoulder Side Tie Dress <br />
               Sku : DRS04147A <br />
               Qty : 1 Price :{" "}
               <span>
-                <i class="fas fa-rupee-sign"></i>
+                <i className="fas fa-rupee-sign"></i>
               </span>{" "}
               1050
               <br />
@@ -149,27 +157,27 @@ function Ship() {
           <span className="product-title prize">
           <h3>Price Details</h3>
           </span>
-          <div class="optionBox">
-            <div class="prizemain">
-              <div class="prizeDetailbox">
-                <div class="prizeDetail">
+          <div className="optionBox">
+            <div className="prizemain">
+              <div className="prizeDetailbox">
+                <div className="prizeDetail">
                   <p>Sub Total</p>
                   <span>
-                    <i class="fas fa-rupee-sign"></i> 1050
+                    <i className="fas fa-rupee-sign"></i> 1050
                   </span>
                 </div>
-                <div class="prizeDetail">
+                <div className="prizeDetail">
                   <p>Shipping</p>
                   <span>
-                    <i class="fas fa-rupee-sign"></i> 50
+                    <i className="fas fa-rupee-sign"></i> 50
                   </span>
                 </div>
-                <div class="orderTotal">
+                <div className="orderTotal">
                   <p>Total</p>
                   <span>
-                    {" "}
+                  
                     <i
-                      class="fas fa-rupee-sign"
+                      className="fas fa-rupee-sign"
                       style={{"float":"none"}}
                     ></i> 1050{" "}
                   </span>
@@ -178,7 +186,7 @@ function Ship() {
             </div>
           </div>
           {/*------------------------------bottom-section-------------- */}
-          <p class="shipdetails">
+          <p className="shipdetails">
             Estimated Delivery Time<br/><br/>
            India : 4-6 business days.<br/> International: 7-12 business days.
            </p>

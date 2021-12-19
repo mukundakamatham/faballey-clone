@@ -58,7 +58,7 @@ function Payment() {
               </div>
             </div>
             
-            <button type="submit" class="btn-payment" onclick="">
+            <button type="submit" className="btn-payment" onclick="">
               Pay Now
             </button>
           </div>
@@ -74,27 +74,27 @@ function Payment() {
 
 
 
-          <div class="optionBox">
-            <div class="prizemain">
-              <div class="prizeDetailbox">
-                <div class="prizeDetail">
+          <div className="optionBox">
+            <div className="prizemain">
+              <div className="prizeDetailbox">
+                <div className="prizeDetail">
                   <p>Sub Total</p>
                   <span>
-                    <i class="fas fa-rupee-sign"></i> 1050
+                    <i className="fas fa-rupee-sign"></i> 1050
                   </span>
                 </div>
-                <div class="prizeDetail">
+                <div className="prizeDetail">
                   <p>Shipping</p>
                   <span>
-                    <i class="fas fa-rupee-sign"></i> 50
+                    <i className="fas fa-rupee-sign"></i> 50
                   </span>
                 </div>
-                <div class="orderTotal">
+                <div className="orderTotal">
                   <p>Total</p>
                   <span>
                     {" "}
                     <i
-                      class="fas fa-rupee-sign"
+                      className="fas fa-rupee-sign"
                       style={{"float":"none"}}
                     ></i> 1050{" "}
                   </span>
@@ -111,16 +111,16 @@ function Payment() {
           <div className="product-title">
             <a href="#">Change Address</a>
           </div>
-          <p class="shipdetails pay-address">
-           shailaja <br/>
-           Itarsi,Madhya Pradesh <br/>
-           India - 461111 <br/>
+          <p className="shipdetails pay-address">
+            Shailaja <br/>
+            Itarsi, Madhya Pradesh<br/>
+           India <br/>
            Mobile <b>9340796426</b><br/></p>
 
           {/*------------------------------bottom-section-------------- */}
-          <p class="delivery-details">
+          <p className="delivery-details">
             Estimated Delivery Time<br/><br/>
-           India : 4-6 business days.<br/> International: 7-12 business days.
+            India : 4-6 business days.<br/> International: 7-12 business days.
            </p>
         </div>
 
