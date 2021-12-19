@@ -1,0 +1,204 @@
+#wishlist-container{
+    background: #f2f2f2;
+    display: inline-block;
+    width: 100%;
+    padding: 30px 0;
+}
+.wish-content{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wishlist-left{
+    width: 20%;
+    display: inline-block;
+    background: #fff;
+    box-shadow: 0 0 10px #e6e6e6;
+}
+.user-details{
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+.user-details span{
+    width: 60px;
+    height: 60px;
+    background: #f2f2f2;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #b0b0b0;
+    font-weight: 600;
+    line-height: 60px;
+    margin-bottom: 5px;
+}
+.user-details p{
+    font-size: 13px;
+    font-weight: 500;
+}
+.user-info a{
+    line-height: 45px;
+    font-weight: 600;
+    display: block;
+    font-size: 13px;
+
+    color: #323232;
+    text-decoration: none;
+    transition: all .3s ease 0s;
+}
+.user-info li{
+    list-style: none;
+}
+.user-info li a i{
+    font-size: 18px;
+    vertical-align: text-bottom;
+    margin-right: 12px;
+    width: 20px;
+    display: inline-block;
+}
+.user-info li a.userActive {
+    color: #fc6486;
+}
+.user-info a:hover{
+    color: #fc6486;
+}
+.right-container{
+    width: 77%;
+    float: right;
+}
+.right-heading{
+    text-transform: none;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.wish-mainbox{
+    text-align: left;
+    font-size: 16px;
+    color: #999;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 15px 0;
+}
+.wish-box{
+    float: right;
+    width: 70%;
+}
+.wish-box span{
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+}
+.wish-product-list{
+    box-shadow: 0 0 10px #e6e6e6;
+    padding: 15px;
+    margin-top: 15px;
+    background: #fff;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.wish-product-name{
+    display: inline-block;
+    vertical-align: top;
+    width: 29%;
+}
+
+.wish-product-name img{
+    max-width: 80px;
+    float: left;
+    margin-right: 12px;
+}
+.wish-product-name p{
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 25px;
+}
+.wish-product-right{
+    float: right;
+    width: 70%;
+}
+.wish-product-right span{
+    width: 33%;
+    float: left;
+    vertical-align: top;
+    text-align: center;
+    margin-top: 38px;
+}
+.wish-price{
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+}
+ .wish-size{
+    display: inline-block;
+    vertical-align: top;
+ }
+ .wish-size select{
+    background: #f4f4f4;
+    padding: 7px;
+    border: 1px solid #e5e5e5;
+  }
+  .wish-btn{
+    display: inline-block;
+    float: right;
+  }
+  .wish-btn a{
+    background: #fc6486;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px 30px;
+    font-weight: 500;
+    display: inline-block;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .wish-btn i{
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 0 0 10px;
+    vertical-align: sub;
+    font-size: 24px;
+    color: #999;
+  }
+  .wish-addall{
+    text-align: center;
+    margin-top: 30px;
+  }
+  .wish-addall a{
+    background: #fc6486;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+    width: 50%;
+    padding: 15px 0;
+    display: inline-block;
+    text-decoration: none;
+
+  }
+  .wish-to-home{
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+.wish-to-home a{
+text-decoration: none;
+color: #323232;
+text-decoration: none;
+transition: all .3s ease 0s;
+}
+
+.error{
+    font-size:11px;
+    color:red;
+    display:none
+}
