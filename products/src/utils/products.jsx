@@ -1,6 +1,7 @@
-
+import { NavLink } from "react-router-dom"
 import { useEffect, useState } from "react"
-import "./products.css"
+import "./products.css";
+import  {BothNavbar} from  "./Bothnavbar"
 
 function  Products(){
 const [data,setData]= useState([])
@@ -131,18 +132,30 @@ pro1()
              if(option==="forty"){
                 const updatelist = data.filter((ev)=>(ev.discount/ev.price)*100 <=50 && (ev.discount/ev.price)*100>41 )
                  setState(updatelist)
-                 } 
-                 
-                 if(option==="fifty"){
-                    const updatelist = data.filter((ev)=>(ev.discount/ev.price)*100 <=100 && (ev.discount/ev.price)*100>51 )
-                     setState(updatelist)
-                     }   
+                 }  
          }
+
+
+      const handleImages=(id)=>{
+       
+            const updatelist = state.map((e)=>{
+                if(e._id===id){
+                 e.status=!e.status
+                }
+                return e
+               
+            })
+            setState(updatelist)
+         }
+
+
+
 
 
     return(
 
   <>
+  <BothNavbar></BothNavbar>
      <div id="colms3-div">
     <div id="color1">Party'21 Collection</div>
     <div id="color2">EOSS | Flat 50-70 % Off</div>
@@ -237,10 +250,14 @@ pro1()
          {
             
              state.map((e)=>(
+
                  <div id="particular-product" key={e._id}>  
-               <img   onMouseEnter={()=>{setImages(false)}} onMouseLeave={(()=>{setImages(true)})} src={images? e.image[0] : e.image[1]}/>
-               <p id ="font-of-productname">{e.productName}</p>
+                 
+               <img onMouseEnter={()=>handleImages(e._id)} onMouseLeave={()=>{handleImages(e._id)}}  src={e.status? e.image[0] : e.image[1]} />
+               <NavLink style={{textDecoration:"none"}} to={`/productDetail/${e._id}`}>
+               <p id ="font-of-productname">{e.productName}</p></NavLink>
                <p id ="font-of-productname-color">₹ {e.price-e.discount} <span> ₹</span><span id="for-line-through"> {e.price}</span> </p>
+               
                </div>
              ))
          }

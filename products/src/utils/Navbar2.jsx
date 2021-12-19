@@ -11,6 +11,7 @@ import Sale699 from "../images/699sale.webp";
 import Sale799 from "../images/799sale.webp";
 import Sale999 from "../images/999sale.webp";
 import Lookbooks from "../images/lookbooks.webp";
+import { NavLink } from "react-router-dom";
 
 
 function Navbar2(){
@@ -29,7 +30,7 @@ function Navbar2(){
 
               <div id="forflex">
                   <div id="fortext">
-              <a href="#">Clothing</a>
+              <NavLink to ="/products">Clothing</NavLink>
               <a href="#">Curve</a>
               <a href="#">Best Selling</a>
               <a href="#">Accessories</a>
@@ -212,7 +213,7 @@ function Navbar2(){
 
               <div id="forflex">
                   <div id="fortext">
-              <a href="#">CLOTHING</a>
+              <NavLink to = "/test" >CLOTHING</NavLink>
               <a href="#">CURVE</a>
               <a href="#">BEST SELLERING</a>
               <a href="#">ACCESSORRIES</a>
