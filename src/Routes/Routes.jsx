@@ -8,7 +8,9 @@ import Payment from '../components/payments/payment'
 import { SigninPage } from "./Signinpage";
 import { LoginPage } from "./LoginPage";
 import ProductList from "../components/ProductList/ProductList";
-import Footer from '../components/footer/footer'
+import Footer from '../components/footer/footer';
+import {BothNavbar} from "../Navbars/Bothnavbar"
+import {Products} from "../components/Product/products"
 function Routes() {
   return (
     <>
@@ -21,9 +23,15 @@ function Routes() {
          <Link to="/wishlist">wishlist</Link>
          <Link to='/productlist'>ListOf</Link>
       </div>
+      <BothNavbar/>
+
       <Switch>
         <Route exact path="/">
           <Home />
+
+        </Route>
+        <Route path="/products">
+          <Products /> 
         </Route>
         <Route path="/wishlist">
           <Wishlist /> 
@@ -43,7 +51,7 @@ function Routes() {
         <Route>
           <h3>Error</h3>
         </Route>
-        <Route path='/productlist'>
+        <Route path='/products/:id'>
           <ProductList/>
         </Route>
       </Switch>

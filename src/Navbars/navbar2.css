@@ -1,0 +1,166 @@
+*{
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color:#323232;
+}
+
+
+#nav2-container{
+    display:flex;
+    justify-content: space-between;
+    padding:1% 2% 1% 2%;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    align-items: center;
+    position: relative;
+}
+
+
+
+#searchbox{
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+}
+
+#faballeylogo{
+    margin-right: 4%;
+}
+
+#forallcontent {
+    display: flex;
+    flex: 1;
+  justify-content: space-evenly;
+  /* border: 1px solid; */
+}
+
+#image-inside-dropdown{
+    margin-top: 9px;
+    margin-bottom: 15px;
+}
+
+#image-inside-dropdown-tops{
+    margin-top: 9px;
+    margin-bottom: 10px;
+    margin-left: 8%;
+    }
+#image-inside-dropdown-tops>img{
+    height: 350px;
+    object-fit: contain;
+
+}
+
+#for-tops>h1{
+    padding: 8px;
+    padding-top: 0px;
+    font-size: 15px;
+    text-align:left;
+}
+#for-tops{
+    text-align:left ;
+}
+
+#clearance>img{
+    margin-right: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+/* For First box (New in) */
+
+
+
+
+#dropdown {
+    color: #323232;
+    padding-bottom: 12px;
+    border: none;
+    display: right;
+  }
+
+  #dropdown:hover {
+      border-bottom:  4px solid #F7396E;
+      cursor: pointer;
+    }
+
+  .new-in-dropdown {
+    display: none;
+    position: absolute;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+    border-top: 1px solid rgb(207, 207, 207);
+    padding-top: 20px;
+    margin-top: 1.1%;
+  }
+  .new-in-dropdown a {
+    font-weight: 500 !important;
+    color: #323232;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+   .new-in-dropdown a:hover {color: #F7396E;}
+   #content-div1:hover .new-in-dropdown {display: block;background-color: white;}
+  
+  
+  
+#forflex{
+    display: flex;
+}
+#fortext{
+    text-align:left;
+    margin-left: 15%;
+    margin-right: 8%;
+}
+
+#fortext1{
+  
+    text-align:left;
+    margin-left: 8%;
+    margin-right:8%;
+}
+
+#fortext1>h1{
+    
+    padding: 8px;
+    padding-top: 0px;
+    font-size: 15px;
+    text-align:left;
+}
+/* First box ends------------- */
+
+
+
+/* For box2 */
+.new-in-dropdown a:hover {color: #F7396E;}
+   #content-div2:hover .new-in-dropdown {display: block;background-color: white;}
+
+
+   /* BOX3 */
+
+   .new-in-dropdown a:hover {color: #F7396E;}
+   #content-div3:hover .new-in-dropdown {display: block;background-color: white;}
+
+
+   /* Box 4 */
+
+   .new-in-dropdown a:hover {color: #F7396E;}
+   #content-div4:hover .new-in-dropdown {display: block;background-color: white;}
+
+
+   /* Box 5 */
+
+   .new-in-dropdown a:hover {color: #F7396E;}
+   #content-div5:hover .new-in-dropdown {display: block;background-color: white;}
+
+   /* Box 9 */
+
+   .new-in-dropdown a:hover {color: #F7396E;}
+   #content-div9:hover .new-in-dropdown {display: block;background-color: white;}
+
+   /* Box 8 */
+   .new-in-dropdown a:hover {color: #F7396E;}
+   #content-div8:hover .new-in-dropdown {display: block;background-color: white;}
