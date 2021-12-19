@@ -21,7 +21,7 @@ router.get("/",authenticate, async (req, res) => {
     let cart = user.cartItems;
 
     if (cart.length === 0) {
-      return res.send("empty cart");
+      return res.send(["empty cart"]);
     }
 
     // console.log(cart);

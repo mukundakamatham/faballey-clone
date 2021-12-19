@@ -31,6 +31,8 @@ const productSchema = new mongoose.Schema(
         sizes: [{ type: String, required: false }], // sizes: ["s,m,l"],
         color: { type: String, required: false },
         gender: { type: String, required: true },
+        status:{type:Boolean,required:false}
+
       },
       {
         versionKey: false,

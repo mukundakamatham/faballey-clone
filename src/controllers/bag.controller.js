@@ -20,9 +20,9 @@ router.get("/",authenticate, async (req, res) => {
 
     let bag = user.bagItems;
 
-    if (bag.length === 0) {
-      return res.send("empty BAG");
-    }
+    // if (bag.length === 0) {
+    //   return res.send(["empty BAG"]);
+    // }
 
     // console.log(bag);
 
