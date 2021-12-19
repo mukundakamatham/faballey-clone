@@ -1,0 +1,62 @@
+*{
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    color:#323232;
+}
+
+
+
+#nav1-container{
+    display :flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-left: 2%;
+     padding-right: 2%;
+    border: 1px solid rgb(207, 207, 207);
+    border-top: none;
+    font-size: small;
+    font-weight: 500;
+    
+}
+#sale{
+    color: #fc6486;
+    cursor: pointer;
+}
+#track-n-bag-div{
+    /* border: 1px solid green; */
+    display :flex;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+
+#track-n-bag-div > span{
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+#heartimage>img{
+    /* border: 1px solid black; */
+    padding-top:6px;
+    cursor: pointer;
+}
+
+#bagimage>img{
+    /* border: 1px solid black; */
+    padding-top:6px;
+    cursor: pointer;
+    
+}
+
+#image-div{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}
+#image-div >img{
+    border: 1px solid rgb(207, 207, 207);
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    cursor: pointer;
+}

@@ -1,0 +1,44 @@
+.browsimg{
+   height:320px;
+}
+
+.hmtrnditemNm_p {
+   font-size: 13px;
+   font-weight: 600;
+   margin-top: 5px;
+   color: black;
+}
+
+.hmtrnditemNm_span {
+   font-size: 14px;
+   margin: 0 3px;
+   color: #fc6486;
+   font-weight: 600;
+   font-family: 'Lato',sans-serif;
+}
+
+.hmtrndcutprz {
+   color: #323232 !important;
+   text-decoration: line-through;
+   font-size: 13px !important;
+}
+
+/* button {
+   border-radius: 0px;
+} */
+
+.img_wd img{
+   width: 250px;
+}
+
+li{
+   flex: 1 1 auto;
+   position: relative;
+   width: 290px;
+}
+
+.react-multi-carousel-item  li{
+   flex: 1 1 auto;
+   position: relative;
+   width: 290px;
+}

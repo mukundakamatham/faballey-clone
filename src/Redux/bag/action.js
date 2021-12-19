@@ -55,7 +55,7 @@ const addBAGFailure = (error) => {
 const addBAG = (payload) => (dispatch) => {
   dispatch(addBAGRequest());
   return app
- .post("/bag/add",{prodId:payload.ProdId},{ headers: {
+ .post("/bag/add",{prodId:payload._Id},{ headers: {
     'Authorization': 'Bearer ' + token
   }})
     .then((res) => {
@@ -126,7 +126,7 @@ const delBAGFailure = (error) => {
 const deleteBAG = (payload) => (dispatch) => {
   dispatch(delBAGRequest());
   return app
- .post("/BAG/deleteItem",{prodId:payload.ProdId},{ headers: {
+ .post("/BAG/deleteItem",{prodId:payload._Id},{ headers: {
     'Authorization': 'Bearer ' + token
   }})
     .then((res) => {

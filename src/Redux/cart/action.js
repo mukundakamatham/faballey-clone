@@ -55,7 +55,7 @@ const addCARTFailure = (error) => {
 const addcart = (payload) => (dispatch) => {
   dispatch(addCARTRequest());
   return app
- .post("/cart/add",{prodId:payload.ProdId},{ headers: {
+ .post("/cart/add",{prodId:payload._Id},{ headers: {
     'Authorization': 'Bearer ' + token
   }})
     .then((res) => {
@@ -126,7 +126,7 @@ const delCARTFailure = (error) => {
 const deletecart = (payload) => (dispatch) => {
   dispatch(delCARTRequest());
   return app
- .post("/cart/deleteItem",{prodId:payload.ProdId},{ headers: {
+ .post("/cart/deleteItem",{prodId:payload._Id},{ headers: {
     'Authorization': 'Bearer ' + token
   }})
     .then((res) => {
