@@ -54,9 +54,9 @@ function Bag(){
              <div id="donation-check"> <h3>Donation</h3> <input type="checkbox"></input></div>
              <p>Extra  10 (This donation is towards NGO Ssrishti that is providing food and hygiene essentials to migrant labors during the COVID-19 lockdown)</p>
              <hr></hr>
-             <div id="applyc0upon"> <img src ={Plus}></img>  <span>Apply Coupon</span> </div>
+             <div id="applyc0upon"> <img src ={Plus} style={{cursor:"pointer"}}></img>  <span>Apply Coupon</span> </div>
              <hr></hr>
-             <div id="applyc0upon"> <img src ={Plus}></img> <span>Reedeem Gift Card</span></div>
+             <div id="applyc0upon"> <img src ={Plus} style={{cursor:"pointer"}}></img> <span>Reedeem Gift Card</span></div>
              <hr></hr>
              <div id="subtotal"><span>Sub Total</span>  <span> ₹ 970</span> </div>
              <hr></hr>
