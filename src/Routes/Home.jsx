@@ -1,19 +1,17 @@
 
-import { useSelector } from "react-redux";
-import { Redirect } from "react-router-dom";
+import ImageSlider from '../components/Homepage/ImageSlider';
 
 function Home() {
-  const isAuth = useSelector((state) => state.auth.isAuth);
-  const token = useSelector((state) => state.auth.token);
+  // const isAuth = useSelector((state) => state.auth.isAuth);
+  // const token = useSelector((state) => state.auth.token);
  
-  if (!isAuth) {
-    return <Redirect to="/login" />;
-  }
+  // if (!isAuth) {
+  //   return <Redirect to="/login" />;
+  // }
 
   return (
     <div>
-      <h3>{token}</h3>
-      hello
+      <ImageSlider/>
     </div>
   );
 }

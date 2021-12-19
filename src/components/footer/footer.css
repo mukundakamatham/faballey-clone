@@ -1,10 +1,12 @@
 body{
     font-family: 'Lato';
     color: #323232;
+}
+.marrr{
     padding:8px;
     margin:0px 140px 0px 170px;
-
 }
+
 .footer{
     height: 155px;
     overflow-y: scroll !important ;

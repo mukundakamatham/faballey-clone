@@ -7,7 +7,7 @@ import twit from './images/twitter.png';
 
 function Footer() {
     return (
-    <div>
+    <div className="marrr">
         <div className="footer-container">
             <h1>ONLINE SHOPPING SITE FOR WOMEN’S FASHION - FABALLEY</h1>
           <div className="footer">
@@ -150,7 +150,7 @@ function Footer() {
             </div>
             <div>
                 <h3>PAYMENT METHODS</h3>
-                <img src="https://static.faballey.com/images/patmentimg.png?v=11.2" data-original="https://static.faballey.com/images/patmentimg.png?v=11.2" class="lazy" alt="Payment Image"></img>
+                <img src="https://static.faballey.com/images/patmentimg.png?v=11.2" data-original="https://static.faballey.com/images/patmentimg.png?v=11.2" class="lazy" alt="Payment"></img>
             </div>
         </div>
     </div>

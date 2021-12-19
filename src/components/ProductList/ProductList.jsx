@@ -1,15 +1,72 @@
 import styles from './ProductList.module.css';
 import Tabs from './Tabs.js'
-import {useParams,useState,useEffect} from 'react'
+import {useState,useEffect} from 'react'
+import {useParams} from "react-router-dom"
+import App, { app } from '../../utils/request'
+import { shallowEqual, useDispatch, useSelector } from "react-redux";
+import { addBAG } from '../../Redux/bag/action';
+import {addcart} from '../../Redux/cart/action';
 function ProductList() {
-  
+   
+
+    const { isAuth, isLoading, token, isError } = useSelector(
+        (state) => state.auth,
+        shallowEqual
+      );
+
+    const dispatch = useDispatch();
+
+    const addToCart = (product) =>{
+      if(isAuth){
+        dispatch(addcart(product))
+      }  else{
+          alert("Login First")
+      }
+    }
+
+    const addToBag = (product) => {
+        if(isAuth){
+            dispatch(addcart(product))
+          }  else{
+              alert("Login First")
+          }
+    }
+   
+    const [product, setProduct ] = useState({"_id":{"$oid":"61bae728f4c625615cb302dd"},"brandName":"pepe","category":"Dress","description":"nice","productName":"Blush Pink Pleated Full Sleeve Dress","price":1900,"quantity":1,"image":["https://img.faballey.com/images/Product/DRS04473Z/d3.jpg","https://img.faballey.com/images/Product/DRS04473Z/d4.jpg","https://img.faballey.com/images/Product/DRS04473Z/d5.jpg","https://img.faballey.com/images/Product/DRS04473Z/d6.jpg","https://img.faballey.com/images/Product/DRS04473Z/d7.jpg","https://img.faballey.com/images/Product/DRS04473Z/d8.jpg"],"discount":900,"sizes":["s","m","l"],"color":"pink","gender":"female","status":true}
+    )
+    
+    const price = (+product.price)-(+product.price/100)*25;
+
+    const  getDetails = async(key) =>{try  {
+        await app.get(`/productDetail/:${key}`,).then(res =>{
+          
+          setProduct(res.data)
+       });
+       } catch (error) {
+           console.log(error);
+       }
+
+    }
+    
+    let { id } = useParams();
+    
+    useEffect(() => {
+        getDetails(id)
+    }, [])
+    
+    var image = product.image;
     return (
         <div>
             <div className={styles.prodCntr}>
 
                 <div className={styles.prodLeft}>
                      <ul className={styles.sliderBox}>
-                         <li className={styles.sliderBox_li}>
+                         {image.map((e)=>(<li className={styles.sliderBox_li}>
+                             <a href="##" className={styles.productsections_a}>
+                                 <img src={e}  alt ="" className={styles.sliderBox_li_img} />
+                             </a>
+                         </li>))}
+                         {/* <li className={styles.sliderBox_li}>
                              <a href="##" className={styles.productsections_a}>
                                  <img src="https://img.faballey.com/images/Product/TOP05642Z/d3.jpg"  alt ="" className={styles.sliderBox_li_img} />
                              </a>
@@ -19,27 +76,38 @@ function ProductList() {
                              <a href="##" className={styles.productsections_a}>
                                  <img src="https://img.faballey.com/images/Product/TOP05642Z/d3.jpg"  alt ="" className={styles.sliderBox_li_img} />
                              </a>
-                         </li>
+                         </li> */}
                      </ul>
                 </div>
 
                 <div className={styles.prodRight}>
+                    <div className={styles.boxx1}>
                     <span className={styles.hour24sp}> Free shipping on orders above INR 3000 </span>
-                    <h1 className={styles.prodRight_h1}>Navy Ruffled Strappy One Shoulder Top</h1>
-                    <h4 className={styles.prodRight_h4}>
-                        <span className={styles.prodRight_sp1}>
+                    </div>
+                   <div className={styles.boxx1}>
+                   <h1 className={styles.prodRight_h1}>{product.productName}</h1>
+                   </div>
+                   <div className={styles.boxx1}>
+                   <h4 className={styles.h44}>
+                           <span className={styles.span44}>
                             <i class="fal fa-rupee-sign"></i> 
-                            1500</span>
-                       <span className={styles.prodRight_sp2}>
+                           { product.price}</span>
+                            <span className={styles.span45}>
                            <i class="fal fa-rupee-sign"></i>
-                            1125</span>
+                            {price}</span>
                             <span className={styles.prodRight_sp3}>
                                 (25% OFF)</span>
-                                <span className={styles.alltaxes}>Inclusive of all taxes</span>
-                                </h4>
-                                <p className={styles.prodRight_p}>SKU:  <span>TOP05643Z</span></p>
 
-                                <div className={styles.prodslSize}>
+                            </h4>
+                   </div>
+                   <div className={styles.boxx1}>
+                   <span className={styles.alltaxes}>Inclusive of all taxes</span>
+                   </div>
+
+                   <div className={styles.boxx1}>
+                   <p className={styles.prodRight_p}>SKU: TOP05643Z</p>
+                   </div>                          
+                         <div className={styles.prodslSize}>
                                     <div className={styles.sizeError} >
                                         <span className={styles.sizeError_span}>Select Size</span>
                                     </div>
@@ -88,10 +156,12 @@ function ProductList() {
                                             </div> */}
                                         </li>
                                     </ul>
-                                </div>
+                         </div>
+                         <div className={styles.divm}>
+                         <button onClick={addToBag} type="button" className={styles.addbagBtn}>ADD TO BAG</button> 
+                         <button onClick={addToCart} type="button" className={styles.savewshBtn}>ADD TO CART</button>
+                         </div>
 
-                                <button type="button" className={styles.addbagBtn}>ADD TO BAG</button> 
-                                <button type="button" className={styles.savewshBtn}>ADD TO BAG</button>
 
                                 <div className={styles.box1}>
                                     <h6>Offers You Don’t Want to Miss</h6>

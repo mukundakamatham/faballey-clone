@@ -8,8 +8,14 @@
 }
 
 .sliderBox {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap:1%;
+    grid-template-rows: 560px 560px 560px;
+    overflow: scroll;
+    height:900px;
+    overflow-x: hidden;
+    scrollbar-width: none;
 }
 
 .sliderBox_li {
@@ -29,11 +35,19 @@
 }
 
 .sliderBox_li_img {
-    max-width: 100%;
+    width: 450px;
+    height:550px;
     display: block;
 }
 
 .prodRight {
+   display:flex;
+   flex-direction: column;
+   height:900px;
+   margin: 3%;
+}
+
+.uygs{
     float: right;
     width: 94%;
     padding-top: 20px;
@@ -76,7 +90,7 @@
     font-size:11px;
     color:#000;
     float:right;
-    margin:0px 340px 0 0px;
+    margin:0px 115px 0 0px;
 }
 
 .alltaxes{
@@ -89,13 +103,15 @@
 .prodRight_p {
     font-size: 12px;
     font-weight: 700;
-    margin-top: -9px;
+    margin-top: 2px;
     font-family: 'Lato',sans-serif;
     color: #999;
 }
 
 .prodslSize {
     margin-top: -13px;
+    text-align: left;
+
 }
 
 .sizeError {
@@ -148,9 +164,9 @@
 .prodslSize li {
     /* margin: 0 15px 10px 0; */
     display: inline-block;
-    width: 60px;
+    width: 70px;
     line-height: 36px;
-    margin-right: 5px;
+    margin-right: 0px;
     position: relative;
 }
 
@@ -165,7 +181,7 @@
     border: 1px solid #dcdcdc;
     min-width: 10px;
     height: 50px;
-    width: 50px;
+    width: 34px;
     display: block;
     text-align: center;
     line-height: 50px;
@@ -238,7 +254,7 @@ a {
 }
 
 .box1{
-    margin-top: 100px;
+    margin-top: 30px;
     border: 1px solid #dcdcdc;
     margin-block-end: 1.33em;
     padding: 0px 0px 0px 15px;
@@ -301,8 +317,8 @@ a {
 
 .box2_span {
     position: absolute;
-    top: 535px;
-    right: 25px;
+    top: 545px;
+    right: 75px;
     cursor: pointer;
     color: #fc6486;
     font-weight: 600;
@@ -313,6 +329,7 @@ a {
     font-size: 13px;
     font-weight: 500;
     color: #555;
+    padding-top: 10px;
 }
 
 .box3{
@@ -338,3 +355,40 @@ a {
     margin-right: 5px;
 }
 
+.boxx1{
+    height:30px;
+    text-align: left;
+}
+
+.boxx2{
+    height:30px;
+    display: flex;
+    flex-direction: row;
+    align-items: evenly;
+    width:60%;
+}
+
+.h44{
+    float: left;
+}
+
+.span44{
+    float: left;
+    /* margin-left: 182px; */
+    text-decoration: line-through;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.span45{
+    float: left;
+    margin-left: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fc6486;
+}
+
+.divm{
+    margin-top:2vw ;
+}

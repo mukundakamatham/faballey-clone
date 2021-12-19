@@ -1,5 +1,5 @@
 import React from "react";
-import "./payment.css";
+// import "./payment.css";
 import PayFooter from "./payfooter"
 import ShipFooter from "./shipfooter"
 import './ship.css';
@@ -106,7 +106,7 @@ if(!isAuth){
           </div>
           {/* ----------------- */}
           <div className="payment-method-list">
-            <button type="button" className="active">
+            <button type="button" className="activess">
               CREDIT/DEBIT CARD
             </button>
             <button type="button" className="btn-method">
@@ -236,8 +236,8 @@ if(!isAuth){
       </div>
      
 
-      <PayFooter/>
-<ShipFooter/>
+      {/* <PayFooter/>
+<ShipFooter/> */}
 
     </div>
     

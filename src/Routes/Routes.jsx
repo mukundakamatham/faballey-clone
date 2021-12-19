@@ -4,9 +4,11 @@ import { Home } from "./Home";
 import Wishlist from "../components/wishlist/Wishlist"
 import Shipping from '../components/payments/ship';
 
- import Payment from '../components/payments/payment'
+import Payment from '../components/payments/payment'
 import { SigninPage } from "./Signinpage";
 import { LoginPage } from "./LoginPage";
+import ProductList from "../components/ProductList/ProductList";
+import Footer from '../components/footer/footer'
 function Routes() {
   return (
     <>
@@ -17,6 +19,7 @@ function Routes() {
          <Link to="/Shipping">Shipping</Link>
          <Link to="/Payment">Payment</Link>
          <Link to="/wishlist">wishlist</Link>
+         <Link to='/productlist'>ListOf</Link>
       </div>
       <Switch>
         <Route exact path="/">
@@ -40,7 +43,11 @@ function Routes() {
         <Route>
           <h3>Error</h3>
         </Route>
+        <Route path='/productlist'>
+          <ProductList/>
+        </Route>
       </Switch>
+      <Footer/>
     </>
   );
 }
