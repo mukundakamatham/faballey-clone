@@ -13,7 +13,7 @@
     color: #fc6486;
 }
 #bag-big-div{
-border: 1px solid black;
+/* border: 1px solid black; */
 display: flex;
 justify-content: space-between;
 padding: 1% 12% 1% 10%;
