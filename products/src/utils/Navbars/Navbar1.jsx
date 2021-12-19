@@ -1,8 +1,8 @@
-import Faballey from "../images/logo.png";
-import Indya from "../images/indya.png";
-import Heart from "../images/heart.svg";
-import Bag from "../images/bag.svg";
-
+import Faballey from "../../images/logo.png";
+import Indya from "../../images/indya.png";
+import Heart from "../../images/heart.svg";
+import Bag from "../../images/bag.svg";
+import { NavLink } from "react-router-dom";
 import "./navbar1.css";
 
 
@@ -25,9 +25,9 @@ function Navbar1(){
              <span>Gift Card | </span>
              <span> User Name  | </span>
              
-             <span id ="heartimage"> <img  src={Heart}></img>  </span>
+              <span id ="heartimage"> <img src={Heart}></img>  </span>
              <span> | </span>
-             <span id="bagimage"> <img src={Bag}></img></span>
+             <NavLink to ="/bag"><span id="bagimage"  >  <img src={Bag}></img></span></NavLink>
              
             
             

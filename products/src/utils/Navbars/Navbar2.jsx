@@ -1,16 +1,16 @@
 import "./navbar2.css"
-import Faballeynav2 from "../images/faballey2ndnavbar.png";
-import Search from "../images/Search.svg";
-import Newin from "../images/newindrpdnnv1.png";
-import Party from "../images/party.png"
-import Clothing from "../images/clothing.jpg";
-import Tops from "../images/tops.png";
-import Dresses from "../images/dresses.png";
-import Clearance from "../images/clearancesale.webp";
-import Sale699 from "../images/699sale.webp";
-import Sale799 from "../images/799sale.webp";
-import Sale999 from "../images/999sale.webp";
-import Lookbooks from "../images/lookbooks.webp";
+import Faballeynav2 from "../../images/faballey2ndnavbar.png";
+import Search from "../../images/Search.svg";
+import Newin from "../../images/newindrpdnnv1.png";
+import Party from "../../images/party.png"
+import Clothing from "../../images/clothing.jpg";
+import Tops from "../../images/tops.png";
+import Dresses from "../../images/dresses.png";
+import Clearance from "../../images/clearancesale.webp";
+import Sale699 from "../../images/699sale.webp";
+import Sale799 from "../../images/799sale.webp";
+import Sale999 from "../../images/999sale.webp";
+import Lookbooks from "../../images/lookbooks.webp";
 import { NavLink } from "react-router-dom";
 
 

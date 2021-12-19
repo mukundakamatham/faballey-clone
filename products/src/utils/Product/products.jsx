@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom"
 import { useEffect, useState } from "react"
 import "./products.css";
-import  {BothNavbar} from  "./Bothnavbar"
+import  {BothNavbar} from  "../Navbars/Bothnavbar"
 
 function  Products(){
 const [data,setData]= useState([])
-const [images,setImages]=useState(true)
+// const [images,setImages]=useState(true)
 const [state,setState] =useState([])
 useEffect(()=>{
 pro1()
@@ -253,7 +253,7 @@ pro1()
 
                  <div id="particular-product" key={e._id}>  
                  
-               <img onMouseEnter={()=>handleImages(e._id)} onMouseLeave={()=>{handleImages(e._id)}}  src={e.status? e.image[0] : e.image[1]} />
+               <img onMouseEnter={()=>handleImages(e._id)} onMouseLeave={()=>{handleImages(e._id)}}  src={e.status? e.image[0] : e.image[1]} alt="image" />
                <NavLink style={{textDecoration:"none"}} to={`/productDetail/${e._id}`}>
                <p id ="font-of-productname">{e.productName}</p></NavLink>
                <p id ="font-of-productname-color">₹ {e.price-e.discount} <span> ₹</span><span id="for-line-through"> {e.price}</span> </p>
