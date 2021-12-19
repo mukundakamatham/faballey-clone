@@ -1,7 +1,7 @@
 import style from './login.module.css'
 import {useState} from "react"
 
-import { Redirect } from "react-router-dom";
+// import { Redirect } from "react-router-dom";
 export const SignIn = ({ handleSignin }) => {
 
 
@@ -28,7 +28,7 @@ const face_auth=()=>{
   return (
     <div className={style.loginpopmain}>
       <div className={style.login}>
-        <h3 className={style.log_h3}>LOGIN OR SIGNUP</h3>
+        <h3 className={style.log_h3}> SIGNUP</h3>
         <p className={style.loginpop_p}>for a quicker checkout</p>
 
         <i className={style.fa_times_circle}></i>
