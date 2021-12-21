@@ -14,17 +14,7 @@ import {Products} from "../components/Product/products"
 function Routes() {
   return (
     <>
-      <div>
-        <Link to="/">TASKS</Link>
-        <Link to="/register">signIN</Link>
-         <Link to="/login">LOGIN</Link>
-         <Link to="/Shipping">Shipping</Link>
-         <Link to="/Payment">Payment</Link>
-         <Link to="/wishlist">wishlist</Link>
-         <Link to='/productses'>ListOf</Link>
-
-
-      </div>
+    
       <BothNavbar/>
 
       <Switch>
