@@ -21,7 +21,7 @@ const face_auth=()=>{
 }
 
   const google_auth=()=>{
-    window.location.href = "http://localhost:2345/auth/google"
+    window.location.href = "https://faballey.herokuapp.com/auth/google"
   }
 
 

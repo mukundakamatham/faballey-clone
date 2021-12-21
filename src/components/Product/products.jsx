@@ -15,7 +15,7 @@ pro1()
    
 
     const pro1 =async()=>{
-          let user = await fetch("http://localhost:2345/products")
+          let user = await fetch("https://faballey.herokuapp.com/products")
           let bali =await user.json();
           setData(bali)
           setState(bali)

@@ -1,4 +1,4 @@
-import { LOGIN_FAILURE, LOGIN_REQUEST, LOGIN_SUCCESS,SIGNIN_FAILURE,SIGNIN_SUCCESS,SIGNIN_REQUEST } from "./actionTypes";
+import {LOGOUT, LOGIN_FAILURE, LOGIN_REQUEST, LOGIN_SUCCESS,SIGNIN_FAILURE,SIGNIN_SUCCESS,SIGNIN_REQUEST } from "./actionTypes";
 import {app }from "../../utils/request";
 const loginRequest = () => {
   return {
@@ -75,9 +75,14 @@ const signinUser = (payload) => (dispatch) => {
       dispatch(failureAction);
     });
 };
-
+const logOUT = () => {
+  return {
+    type:  LOGOUT,
+    payload: ""
+  };
+};
 
 const Logout= () => (dispatch) => {
-  dispatch(loginFailure)
+  dispatch(logOUT)
 }
 export { Logout,loginRequest, loginSuccess, loginFailure, loginUser,signinUser,signinRequest,signinSuccess,signinFailure };

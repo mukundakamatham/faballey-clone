@@ -1,5 +1,5 @@
 import React from "react";
-// import "./payment.css";
+import "./payment.css";
 import PayFooter from "./payfooter"
 import ShipFooter from "./shipfooter"
 import './ship.css';
@@ -27,16 +27,14 @@ const cart = useSelector((state) => state.cart.CARTs);
       
     }, [])
     // const cartinfo=async()=>{
-    //     try {
-    //         await app.get("/cart/",{ headers: {
-    //            'Authorization': 'Bearer ' + token
-    //          }}).then(res =>{
+        // try {
+        //     await app.get(`/productDetail/:${key}`,).then(res =>{
               
-    //           setAddress(res.data)
-    //        });
-    //        } catch (error) {
-    //            console.log(error);
-    //        }
+        //       setProduct(res.data)
+        //    });
+        //    } catch (error) {
+        //        console.log(error);
+        //    }
     
     // }
     const adress=async()=>{
@@ -106,7 +104,7 @@ if(!isAuth){
           </div>
           {/* ----------------- */}
           <div className="payment-method-list">
-            <button type="button" className="activess">
+            <button type="button" className="active">
               CREDIT/DEBIT CARD
             </button>
             <button type="button" className="btn-method">
@@ -236,8 +234,8 @@ if(!isAuth){
       </div>
      
 
-      {/* <PayFooter/>
-<ShipFooter/> */}
+      <PayFooter/>
+<ShipFooter/>
 
     </div>
     

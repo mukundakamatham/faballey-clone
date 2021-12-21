@@ -52,13 +52,13 @@ function ADDTOCART(){
                   </li>
                   <li>
                     <a href="#" className="userActive">
-                      <i className="far fa-heart"></i>
+                      <i class="far fa-heart"></i>
                       My Wishlist
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i className="fas fa-wallet"></i>My Credits
+                      <i class="fas fa-wallet"></i>My Credits
                     </a>
                   </li>
                   <li>
