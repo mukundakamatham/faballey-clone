@@ -116,46 +116,14 @@ export const ProductList=()=>{
                                         <h5 className={styles.prodSizeguide_h5}>Size:</h5>
                                         <a href="##" className={styles.prodSizeguide_a}>Size Guide</a>
                                     </div>
-
-                                    <ul>
-                                        <li>
-                                            <a href="##" >
-                                                XS</a>
-                                                <div className={styles.sizeMeasure}>
-                                                    <p>Body measurement: To Fit Bust 33 , <br/> Waist 25 , <br/>
-                                                    </p>
-                                                </div>
-                                        </li>
-
-                                         <li>
-                                            <a href="##">S</a>
-                                            <div className={styles.sizeMeasure}>
-                                               <p>Body measurement: To Fit Bust 34 , <br/> Waist 26 , <br/>
-                                               </p>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <a href="##">M</a>
-                                            <div class="sizeMeasure">
-                                                {/* <p>Body measurement: To Fit Bust 36 , <br/> Waist 28 , <br/></p> */}
-                                            </div>
-                                        </li>
-                                        
-                                        <li>
-                                            <a href="##">L</a>
-                                                <div className={styles.sizeMeasure}>
-                                                    <p>Body measurement: To Fit Bust 38 , <br/> Waist 30 , <br/></p>
-                                                </div>
-                                        </li>
-
-                                        <li>
-                                            <a href="##">XL</a>
-                                            {/* <div className={styles.sizeMeasure}>
-                                                <p>Body measurement: To Fit Bust 40 , <br/> Waist 32 , <br/></p>
-                                            </div> */}
-                                        </li>
-                                    </ul>
+                                   
+                                   <div >
+                                    <button className={styles.sizebutton}>XS</button>
+                                    <button className={styles.sizebutton}>S</button>
+                                    <button className={styles.sizebutton}>M</button>
+                                    <button className={styles.sizebutton}>L</button>
+                                    <button className={styles.sizebutton}>XL</button>
+                                    </div>
                          </div>
                          <div className={styles.divm}>
                          <button onClick={addToBag} type="button" className={styles.addbagBtn}>ADD TO BAG</button> 
@@ -198,5 +166,4 @@ export const ProductList=()=>{
         </div>
     )
 }
-
 
