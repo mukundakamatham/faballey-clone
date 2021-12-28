@@ -28,9 +28,9 @@ dispatch(Logout)
          <div id="track-n-bag-div">
              <span> Track Order | </span>
              <span>Gift Card | </span>
-             <span> User Name  | </span>
+             <span>  
              <div class="dropdown">
-    <button class="dropbtn">Account info
+    <button class="dropbtn">Account info  |
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
@@ -42,7 +42,7 @@ dispatch(Logout)
 
 
 
-
+</span>
 
 
               <span id ="heartimage"> <img src={Heart} alt="heart"></img>  </span>
