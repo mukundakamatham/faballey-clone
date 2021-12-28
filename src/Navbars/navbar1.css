@@ -7,15 +7,15 @@
     font-size: 16px;  
     border: none;
     outline: none;
-    color: white;
+
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
   }
   
-  .navbar p:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: inherit;
   }
   
   .dropdown-content {
@@ -27,7 +27,7 @@
     z-index: 1;
   }
   
-  .dropdown-content p {
+  .dropdown-content a {
     float: none;
     color: black;
     padding: 12px 16px;
@@ -36,7 +36,7 @@
     text-align: left;
   }
   
-  .dropdown-content p:hover {
+  .dropdown-content a:hover {
     background-color: #ddd;
   }
   
