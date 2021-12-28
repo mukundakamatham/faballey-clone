@@ -12,6 +12,15 @@ function Navbar1(){
   const logout=()=>{
 dispatch(Logout)
   }
+  const { isAuth, isLoading, token, isError } = useSelector(
+    (state) => state.auth,
+    shallowEqual
+  );
+
+
+
+ 
+  
     return(
         <div id="nav1-container">
           
@@ -26,23 +35,36 @@ dispatch(Logout)
           </div>
 
          <div id="track-n-bag-div">
-             <span> Track Order | </span>
-             <span>Gift Card | </span>
-             <span>  
+         <span>  
              <div class="dropdown">
-    <button class="dropbtn">Account info  |
+    <button class="dropbtn">{isAuth?"welcome":"LOGIN/SIGNUP"}
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <p ><NavLink to ="/login">Log In</NavLink></p>
-      <p ><NavLink to ="/register">Sign In</NavLink></p>
-      <p  onClick={logout}><NavLink to ="/" >Log Out</NavLink></p>
+      {isAuth?
+    <a   onClick={logout}><NavLink to ="/" >Log Out</NavLink></a>:null}
+    <a  ><NavLink to ="/login">Log In</NavLink></a>
+      <a ><NavLink to ="/register">Sign In</NavLink></a>
+     
     </div>
   </div> 
 
 
+  {/* <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Account info</button>
+  <div id="myDropdown" class="dropdown-content">
+  <a ><NavLink to ="/login">Log In</NavLink></a>
+      <a ><NavLink to ="/register">Sign In</NavLink></a>
+      <a  onClick={logout}><NavLink to ="/" >Log Out</NavLink></a>
+  </div>
+</div> */}
+  </span>
+             <span> Track Order | </span>
+             <span>Gift Card | </span>
+     
 
-</span>
+
+
 
 
               <span id ="heartimage"> <img src={Heart} alt="heart"></img>  </span>
