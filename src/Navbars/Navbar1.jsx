@@ -42,9 +42,9 @@ dispatch(Logout)
     </button>
     <div class="dropdown-content">
       {isAuth?
-    <a   onClick={logout}><NavLink to ="/" ><span>Log Out</span></NavLink></a>:null}
-    <a  ><NavLink to ="/login">    <span> Log In | </span></NavLink></a>
-      <a ><NavLink to ="/register">    <span> Sign In | </span></NavLink></a>
+    <a   onClick={logout}><NavLink to ="/" ><p>Log Out</p></NavLink></a>:null}
+    <a  ><NavLink to ="/login">    <span> Log In </span></NavLink></a>
+      <a ><NavLink to ="/register">    <span> Sign In  </span></NavLink></a>
      
     </div>
   </div> 
