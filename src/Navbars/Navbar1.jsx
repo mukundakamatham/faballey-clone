@@ -37,7 +37,7 @@ dispatch(Logout)
          <div id="track-n-bag-div">
          <span>  
              <div class="dropdown">
-    <button class="dropbtn">{isAuth?"welcome":"LOGIN/SIGNUP"}
+    <button class="dropbtn">{isAuth?"welcome":"Login"}
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
