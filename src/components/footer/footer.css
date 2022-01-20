@@ -108,7 +108,7 @@ text-align: center;
 }
 .help-flex{
     display:flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
 }
 .email{
     max-width: 250px;
