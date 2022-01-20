@@ -78,7 +78,7 @@ function Footer() {
                     </div>
                     <div class="contact-details help">
                          <h3>HELP</h3>
-                         <div className="help-flex">
+                         <div className="help_flex">
 
                              <div >
                                  
