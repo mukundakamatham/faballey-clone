@@ -85,6 +85,13 @@ body{
     border-bottom: 0.2px solid #dcdcdc;
     padding-bottom: 5%;
 }
+.contact-flexx{
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    border-bottom: 0.2px solid #dcdcdc;
+    padding-bottom: 5%;
+}
 .contact-details{
     border-right: 0.2px solid #dcdcdc;
     padding-right: 5%;
